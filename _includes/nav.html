@@ -9,13 +9,16 @@
     <li class="nav-item ml-5">
       <a class="nav-link text-danger" href="mailto:jeff@somecorp.dev">Email</a>
     </li>
+    <li class="nav-item ml-5">
+      <a class="nav-link text-danger" href="{{ 'pings' | relative_url }}">Ping</a>
+    </li>
     <li class="nav-item dropdown ml-5">
-      <a class="nav-link dropdown-toggle text-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <a class="nav-link dropdown-toggle text-danger" href="{{ 'blog' | relative_url }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Blogs
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
         <a class="dropdown-item text-danger" href="{{ 'blog/daughter/' | relative_url }}">Blog - Daughter</a>
-        <a class="dropdown-item text-danger" href="{{ 'blog2.html' | relative_url }}">Blog - Hackers</a>
+        <a class="dropdown-item text-danger" href="{{ 'blog/hackers/' | relative_url }}">Blog - Hackers</a>
       </div>
     </li>
   </ul>
