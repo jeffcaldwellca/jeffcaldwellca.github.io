@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include header.html %}
+  <body>
+    <div class="container">
+      <h1 class="my-4">pings - a stream of thoughts</h1>
+
+      {% for ping in site.pings reversed %}
+        {% include ping.html author=ping.author content=ping.content date=ping.date %}
+      {% endfor %}
+      
+      {% include nav.html %}
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

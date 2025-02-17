@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include header.html %}
+  <body>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-8">
+          <h2>{{ page.title }}</h2>
+          <p class="text-muted">{{ page.date | date: "%B %d, %Y" }}</p>
+          {{ content }}
+        </div>
+        <div class="col-4">
+          <img src="{{ page.image | default: '/assets/img/me.jpg' | relative_url }}" class="img-fluid img-thumbnail" alt="Blog Image">
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

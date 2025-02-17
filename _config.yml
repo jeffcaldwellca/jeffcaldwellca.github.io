@@ -1,0 +1,7 @@
+collections:
+  pings:
+    output: false  # Prevents individual ping pages from being generated
+    sort_by: date
+  blog:
+    output: true  # Generates individual blog post pages
+    permalink: /blog/:name/
