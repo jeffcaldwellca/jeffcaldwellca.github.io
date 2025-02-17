@@ -4,4 +4,4 @@ collections:
     sort_by: date
   blogs:
     output: true  # Generates individual blog post pages
-    permalink: /blogs/:name/
+    permalink: /blog/:name/
