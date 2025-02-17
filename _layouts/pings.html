@@ -3,8 +3,8 @@
   {% include header.html %}
   <body>
     <div class="container">
-      <h1 class="my-4">pings - a stream of thoughts</h1>
-
+      <h1 class="my-4">{{ page.title }}/h1>
+      <h2>a stream of thoughts</h2>
       {% for ping in site.pings reversed %}
         {% include ping.html author=ping.author content=ping.content date=ping.date %}
       {% endfor %}
