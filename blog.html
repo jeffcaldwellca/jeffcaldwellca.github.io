@@ -6,7 +6,7 @@ permalink: /blog/
 
 <h1>Blog Posts</h1>
 <ul>
-  {% for blog in site.blogs reversed %}
+  {% for blog in site.blog reversed %}
     <li>
       <a href="{{ blog.url | relative_url }}">{{ blog.title }}</a> - {{ blog.date | date: "%B %d, %Y" }}
     </li>
