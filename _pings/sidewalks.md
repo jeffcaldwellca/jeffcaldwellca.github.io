@@ -1,5 +1,6 @@
 ---
 feeling: "confused..."
-date: "2025-02-17 10:00"
+date: "2025-02-17 10:00AM EST"
+icon: "person-walking"
 ---
-It never ceases to amaze me how many people choose to walk on the sides of roadways during the winter, evenwhen plowed sidewalks exist just a few feet away from them.
+I cannot understand why so many people choose to walk on the sides of roadways during the winter. Even when the sidewalk is plowed and mere feet away.

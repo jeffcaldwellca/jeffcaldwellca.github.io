@@ -1,8 +1,8 @@
 ---
 layout: blog
-title: "Blog - Hackers"
-date: 2025-02-17
-image: "assets/img/blogs/htp.jpg"
+title: "Hack The Planet"
+date: 2020-08-21
+image: "assets/img/blogs/hacktheplanet.png"
 ---
 Not a single piece of media I have consumed in my life has had such an impact, a ripple effect, on my future trajectory than the movie Hackers.
 

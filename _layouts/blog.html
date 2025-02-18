@@ -3,7 +3,7 @@
   {% include header.html %}
   <body>
     <div class="container">
-      <p><a href="{{ 'blog' | relative_url }}">< back</a></p>
+      <p><a href="/">&lt; back</a></p>
 
       <div class="row mt-3">
         <div class="col-8">
@@ -12,7 +12,7 @@
           {{ content }}
         </div>
         <div class="col-4">
-          <img src="{{ page.image | default: 'assets/img/me.jpg' | relative_url }}" class="img-fluid img-thumbnail" alt="Blog Image">
+          <img src="{{ page.image | default: 'assets/img/me.jpg' | relative_url }}" class="img-fluid img-thumbnail" alt="Featured Image">
         </div>
       </div>
       {% include nav.html %}

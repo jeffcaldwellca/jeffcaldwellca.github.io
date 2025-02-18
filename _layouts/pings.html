@@ -4,11 +4,15 @@
   <body>
     <div class="container">
       <h1 class="my-4">{{ page.title }}</h1>
-      <p><a href="{{ site.baseurl }}">< back</a></p>
-      {% for ping in site.pings reversed %}
-        {% include ping.html feeling=ping.feeling content=ping.content date=ping.date %}
-      {% endfor %}
-      
+      <p><a href="/">&lt; back</a></p>
+      <div class="row">
+        <div class="col-8">
+        {% for ping in site.pings reversed %}
+          {% include ping.html feeling=ping.feeling content=ping.content date=ping.date %}
+        {% endfor %}
+        </div>
+        <div class="col-4"><i class="bi bi-{{ ping.icon }}"></i></div>
+      </div>
       {% include nav.html %}
     </div>
     {% include footer.html %}

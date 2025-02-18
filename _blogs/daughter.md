@@ -1,8 +1,8 @@
 ---
 layout: blog
-title: "Blog - My Daughter"
-date: 2025-02-17
-#image: "assets/img/blogs/daughter.jpg"
+title: "Experiences with my daughter"
+date: 2015-05-03
+image: "assets/img/blogs/daughter.png"
 ---
 
 (Note: This was originally written as part of an interview essay for a job application)
