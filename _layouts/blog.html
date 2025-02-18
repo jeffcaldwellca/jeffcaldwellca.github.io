@@ -3,11 +3,11 @@
   {% include header.html %}
   <body>
     <div class="container">
-      <p><a href="/">&lt; back</a></p>
-
       <div class="row mt-3">
         <div class="col-8">
           <h2>{{ page.title }}</h2>
+          <p><a href="/">&lt; back</a></p>
+
           <p class="text-muted">{{ page.date | date: "%B %d, %Y" }}</p>
           {{ content }}
         </div>
