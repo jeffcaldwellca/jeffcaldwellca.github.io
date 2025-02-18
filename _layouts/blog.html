@@ -12,10 +12,15 @@
           {{ content }}
         </div>
         <div class="col-4">
-          <img src="{{ page.image | default: 'assets/img/me.jpg' | relative_url }}" class="img-fluid img-thumbnail" alt="Featured Image">
+          <div class="row">
+            <img src="{{ page.image | default: 'assets/img/me.jpg' | relative_url }}" class="img-fluid img-thumbnail" alt="Featured Image">
+          </div>
+          <div class="row mt-3">
+            {% include nav.html %}
+          </div>
         </div>
       </div>
-      {% include nav.html %}
+      
     </div>
     {% include footer.html %}
   </body>
