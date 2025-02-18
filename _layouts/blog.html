@@ -3,33 +3,8 @@
   {% include header.html %}
   <body>
     <div class="container">
-      <div class="row mt-3">
-        
-          <h2 class="my-4">{{ page.title }}</h2>
-          <p><a href="/">&lt; back</a></p>
-          <p><img src="{{ page.image | default: 'assets/img/me.jpg' | relative_url }}" class="img-fluid img-thumbnail" alt="Featured Image"></p>
-          <p class="text-muted">{{ page.date | date: "%B %d, %Y" }}</p>
-          {{ content }}
-        
-          {% include nav.html %}
-          </div>
-        </div>
-      </div>
-      
-    </div>
-    {% include footer.html %}
-  </body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-  {% include header.html %}
-  <body>
-    <div class="container">
       <h2 class="my-4">{{ page.title }}</h2>
       <p><a href="{{ 'blog' | relative_url }}">&lt; back</a></p>
-      {% for ping in site.pings reversed %}
       <p><img src="{{ page.image | default: 'assets/img/me.jpg' | relative_url }}" class="img-fluid img-thumbnail" alt="Featured Image"></p>
       <p class="text-muted">{{ page.date | date: "%B %d, %Y" }}</p>
       {{ content }}
