@@ -4,8 +4,7 @@ title: "Experiences with my daughter"
 date: 2015-05-03
 image: "assets/img/blogs/daughter.png"
 ---
-
-(Note: This was originally written as part of an interview essay for a job application)
+*(Note: This was originally written as part of an interview essay for a job application)*
 
 As part of the recruitment process we're supposed to write a blog post on a topic that we are passionate about; as I thought about what I was going to write about I had an idea...
 
