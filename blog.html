@@ -14,7 +14,7 @@ permalink: /blog/
           <a href="{{ blog.url | relative_url }}" class="text-decoration-none fw-semibold">
             {{ blog.title }}
           </a>
-          <span class="ms-5 text-muted small">{{ blog.date | date: "Ymd" }}</span>
+          <span class="ms-5 text-muted small">{{ blog.date | date: "%Y%m%d" }}</span>
         </li>
       {% endfor %}
     </ul>
