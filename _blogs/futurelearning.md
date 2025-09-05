@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: "Education moving forward"
-date: 2015-05-03
+date: 2025-09-05
 image: "assets/img/blogs/futurelearning.png"
 ---
 We’re at a turning point in education. For decades, schools have followed a model built around lectures, homework, and standardized testing. But today and moving forward, kids have something past generations didn’t. Powerful tools, accessible resources, and technology that let's them learn in the way that works best... for them.
