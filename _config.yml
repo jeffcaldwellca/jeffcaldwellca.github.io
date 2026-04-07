@@ -1,3 +1,7 @@
+title: jeffcaldwell.ca
+url: "https://jeffcaldwell.ca"
+description: "Software Developer and Professor of Business and Information Technology"
+
 collections:
   pings:
     output: false  # Prevents individual ping pages from being generated
