@@ -2,12 +2,18 @@
   <meta charset="utf-8">
   <title>{{ page.title | default: "jeffcaldwell.ca" }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  {% if page.image %}<meta property="og:image" content="{{ page.image | absolute_url }}">{% endif %}
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}">
   <link rel="icon" type="image/png" href="{{ 'assets/favicon-96x96.png' | relative_url }}" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="{{ 'assets/favicon.svg' | relative_url }}" />
-<link rel="shortcut icon" href="{{ 'assets/favicon.ico' | relative_url }}" />
-<link rel="apple-touch-icon" sizes="180x180" href="{{ 'assets/apple-touch-icon.png' | relative_url }}" />
-<link rel="manifest" href="{{ 'assets/site.webmanifest' | relative_url }}" />
+  <link rel="icon" type="image/svg+xml" href="{{ 'assets/favicon.svg' | relative_url }}" />
+  <link rel="shortcut icon" href="{{ 'assets/favicon.ico' | relative_url }}" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ 'assets/apple-touch-icon.png' | relative_url }}" />
+  <link rel="manifest" href="{{ 'assets/site.webmanifest' | relative_url }}" />
 </head>

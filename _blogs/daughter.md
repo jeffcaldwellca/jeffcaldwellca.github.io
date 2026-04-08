@@ -18,6 +18,6 @@ Reading about the world of magic and wizards and how to properly choose your wan
 
 All of these experiences, parts of my childhood growing up, are things I can introduce to my daughter. I think the best part of all of this is not just being able to experience them for myself all over again but being able to watch Peyton as she gets the experiences for the first time.
 
-The look of wonder in her eyes when she see's Optimus Prime transform and roll out with the rest of the Autobots; The twinkle in her eyes when ET rides a bike off into the night sky as she imagines all of the amazing adventures she can have in life.
+The look of wonder in her eyes when she sees Optimus Prime transform and roll out with the rest of the Autobots; The twinkle in her eyes when ET rides a bike off into the night sky as she imagines all of the amazing adventures she can have in life.
 
 That is what I am passionate about, my daughter, and helping her experience life in all its wonders... real and imaginary.

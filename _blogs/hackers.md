@@ -6,7 +6,7 @@ image: "assets/img/blogs/hacktheplanet.png"
 ---
 Not a single piece of media I have consumed in my life has had such an impact, a ripple effect, on my future trajectory than the movie Hackers.
 
-Featuring a much lesser well known Angelina Jolie, Johnny Lee Miller, and Matthew Lillard, it was by all accounts a critical failure earning only 8.5m on a 60m budget.
+Featuring a much less well-known Angelina Jolie, Johnny Lee Miller, and Matthew Lillard, it was by all accounts a critical failure earning only 8.5m on a 60m budget.
 
 I have lost count of the number of times I have watched this movie, sometimes on repeat for days while coding in the background. Last time I had a rough idea, it was well over 800 and that was around when Peyton was born.
 

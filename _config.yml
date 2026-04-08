@@ -2,6 +2,11 @@ title: jeffcaldwell.ca
 url: "https://jeffcaldwell.ca"
 description: "Software Developer and Professor of Business and Information Technology"
 
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
 collections:
   pings:
     output: false  # Prevents individual ping pages from being generated
