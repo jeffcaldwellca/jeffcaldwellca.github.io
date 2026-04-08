@@ -1,0 +1,73 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - heading "jeffcaldwell.ca // home" [level=1] [ref=e3]
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - paragraph [ref=e6]:
+          - text: Hi! I’m a Software Developer and Professor of Business and Information Technology based in
+          - link "Northern Ontario, Canada" [ref=e7] [cursor=pointer]:
+            - /url: https://goo.gl/maps/rSao31SW2XueWF2c7
+          - text: . I build web and mobile apps — full-stack systems, API-driven architectures, relational and graph databases — with a focus on cybersecurity.
+        - paragraph [ref=e8]:
+          - text: I’ve built and contributed to a handful of apps for niche markets, including some open source work. I also run the
+          - link "Northern Game Design Challenge" [ref=e9] [cursor=pointer]:
+            - /url: http://www.northerngdc.ca/
+          - text: .
+        - paragraph [ref=e10]:
+          - text: Beyond tech, I'm a
+          - strong [ref=e11]: husband
+          - text: ", a"
+          - strong [ref=e12]: father (x2)
+          - text: ", and a"
+          - strong [ref=e13]: gamer
+          - text: .
+        - paragraph [ref=e14]: "current projects:"
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - link "hivemind" [ref=e17] [cursor=pointer]:
+              - /url: https://www.gethivemind.net
+            - text: "- anonymous local sharing"
+          - listitem [ref=e18]:
+            - link "backsies" [ref=e19] [cursor=pointer]:
+              - /url: https://www.backsies.app
+            - text: "- the backronym game"
+          - listitem [ref=e20]:
+            - link "canadia" [ref=e21] [cursor=pointer]:
+              - /url: https://truenorth.somecorp.dev
+            - text: "- rebuild the true north"
+        - paragraph [ref=e22]: "open source:"
+        - list [ref=e23]:
+          - listitem [ref=e24]:
+            - link "mkcertWeb" [ref=e25] [cursor=pointer]:
+              - /url: https://github.com/jeffcaldwellca/mkcertWeb
+            - text: "- web ui for mkcert"
+          - listitem [ref=e26]:
+            - link "support-portal" [ref=e27] [cursor=pointer]:
+              - /url: https://github.com/jeffcaldwellca/support-portal
+            - text: "- freescout end user support portal"
+      - generic [ref=e28]:
+        - img "Jeff Caldwell" [ref=e30]
+        - navigation [ref=e32]:
+          - list [ref=e33]:
+            - listitem [ref=e34]:
+              - link "Work" [ref=e35] [cursor=pointer]:
+                - /url: /work
+                - generic [ref=e36]: 
+            - listitem [ref=e37]:
+              - link "GitHub" [ref=e38] [cursor=pointer]:
+                - /url: https://www.github.com/jeffcaldwellca
+                - generic [ref=e39]: 
+            - listitem [ref=e40]:
+              - link "LinkedIn" [ref=e41] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/jeffcaldwellca/
+                - generic [ref=e42]: 
+            - listitem [ref=e43]:
+              - link "Email" [ref=e44] [cursor=pointer]:
+                - /url: mailto:jeff@somecorp.dev
+                - generic [ref=e45]: 
+            - listitem [ref=e46]:
+              - link "Blog" [ref=e47] [cursor=pointer]:
+                - /url: /blog
+                - generic [ref=e48]: 
+  - contentinfo [ref=e49]:
+    - generic [ref=e50]: made in canada 🇨🇦
