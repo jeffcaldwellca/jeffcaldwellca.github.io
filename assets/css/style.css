@@ -1,3 +1,39 @@
-body{
+body {
   font-family: "Courier New", Courier, monospace;
+}
+
+/* ── Mobile responsiveness ── */
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 1.3rem;
+    line-height: 1.3;
+    word-break: break-word;
+  }
+
+  .sidebar-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .sidebar-col img {
+    max-width: 160px;
+    width: 100%;
+  }
+
+  .sidebar-col .row:last-child {
+    width: 100%;
+  }
+
+  /* Give list items breathing room on small screens */
+  ul li {
+    margin-bottom: 0.35rem;
+  }
+
+  /* Ensure full-width container padding on phones */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
