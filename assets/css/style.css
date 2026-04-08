@@ -1,5 +1,28 @@
 body {
   font-family: "Courier New", Courier, monospace;
+  padding-bottom: 2.5rem;
+}
+
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-top: 1px solid #dee2e6;
+  z-index: 1000;
+}
+
+.site-footer__text {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  color: #888;
+  text-transform: lowercase;
 }
 
 /* ── Mobile responsiveness ── */
