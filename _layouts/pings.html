@@ -4,7 +4,7 @@
   <body>
     <div class="container">
       <h1 class="my-4">{{ page.title }}</h1>
-      <p><a href="/">&lt; back</a></p>
+      <p><a href="/" class="text-danger">&lt; back</a></p>
       {% for ping in site.pings reversed %}
       <div class="row">       
           {% include ping.html feeling=ping.feeling content=ping.content date=ping.date icon=ping.icon %}
