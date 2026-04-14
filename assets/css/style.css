@@ -24,9 +24,27 @@ body > .container {
   text-transform: lowercase;
 }
 
+/* ── Blog container ── */
+.blog-container {
+  max-width: 900px;
+}
+
 /* ── Blog content links ── */
 .blog-content a {
   color: var(--bs-danger);
+}
+
+/* ── Sidebar ── */
+.sidebar-sticky {
+  position: sticky;
+  top: 1.5rem;
+}
+
+.sidebar-img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  object-position: center top;
 }
 
 /* ── Mobile responsiveness ── */
@@ -44,12 +62,9 @@ body > .container {
     margin-top: 1.5rem;
   }
 
-  .sidebar-col img {
+  .sidebar-img {
     max-width: 160px;
-    width: 100%;
-  }
-
-  .sidebar-col .row:last-child {
+    max-height: 160px;
     width: 100%;
   }
 
