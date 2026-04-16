@@ -8,6 +8,7 @@
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:type" content="{% if page.layout == 'blog' %}article{% else %}website{% endif %}">
   <meta property="og:image" content="{{ page.image | default: 'assets/img/me.jpg' | absolute_url }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">

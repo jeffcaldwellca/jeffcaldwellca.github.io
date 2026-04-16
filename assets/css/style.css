@@ -17,7 +17,6 @@ body > .container {
 }
 
 .site-footer__text {
-  font-family: "Courier New", Courier, monospace;
   font-size: 0.7rem;
   letter-spacing: 0.12em;
   color: #888;
