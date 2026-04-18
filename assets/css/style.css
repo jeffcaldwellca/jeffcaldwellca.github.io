@@ -34,11 +34,6 @@ body > main {
   opacity: 0.75;
 }
 
-/* ── Blog list hover ── */
-.list-group-item:hover {
-  background-color: rgba(0, 0, 0, 0.06);
-}
-
 /* ── Blog container ── */
 .blog-container {
   max-width: 900px;
@@ -75,10 +70,6 @@ a.text-danger:not(.nav-link):hover,
 @media (prefers-reduced-motion: no-preference) {
   .nav-link {
     transition: transform 0.15s ease, opacity 0.15s ease;
-  }
-
-  .list-group-item {
-    transition: background-color 0.15s ease;
   }
 
   a.text-danger:not(.nav-link),
