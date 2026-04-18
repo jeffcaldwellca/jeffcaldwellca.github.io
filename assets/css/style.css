@@ -5,7 +5,8 @@ body {
   flex-direction: column;
 }
 
-body > .container {
+body > .container,
+body > main {
   flex: 1;
 }
 
@@ -19,19 +20,23 @@ body > .container {
 .site-footer__text {
   font-size: 0.7rem;
   letter-spacing: 0.12em;
-  color: #888;
+  color: #767676; /* minimum AA-passing grey on white (4.5:1) */
   text-transform: lowercase;
 }
 
 /* ── Nav hover effects ── */
 .nav-link {
-  transition: transform 0.15s ease, opacity 0.15s ease;
   display: inline-block;
 }
 
 .nav-link:hover {
   transform: translateY(-2px) scale(1.2);
   opacity: 0.75;
+}
+
+/* ── Blog list hover ── */
+.list-group-item:hover {
+  background-color: rgba(0, 0, 0, 0.06);
 }
 
 /* ── Blog container ── */
@@ -44,7 +49,6 @@ a.text-danger:not(.nav-link),
 .blog-content a {
   color: var(--bs-danger);
   text-decoration: none;
-  transition: opacity 0.15s ease;
   text-underline-offset: 3px;
 }
 
@@ -65,6 +69,22 @@ a.text-danger:not(.nav-link):hover,
   max-height: 320px;
   object-fit: cover;
   object-position: center top;
+}
+
+/* ── Transitions (respect reduced-motion preference) ── */
+@media (prefers-reduced-motion: no-preference) {
+  .nav-link {
+    transition: transform 0.15s ease, opacity 0.15s ease;
+  }
+
+  .list-group-item {
+    transition: background-color 0.15s ease;
+  }
+
+  a.text-danger:not(.nav-link),
+  .blog-content a {
+    transition: opacity 0.15s ease;
+  }
 }
 
 /* ── Mobile responsiveness ── */
@@ -88,14 +108,14 @@ a.text-danger:not(.nav-link):hover,
     width: 100%;
   }
 
-  /* Give list items breathing room on small screens */
-  ul li {
+  /* Give content list items breathing room on small screens */
+  .blog-content ul li,
+  .col-12 > ul li {
     margin-bottom: 0.35rem;
   }
 
-  /* Ensure full-width container padding on phones */
+  /* Keep Bootstrap grid gutter in sync with row negative margins */
   .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    --bs-gutter-x: 2rem;
   }
 }
