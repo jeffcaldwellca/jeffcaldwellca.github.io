@@ -23,14 +23,35 @@ body > .container {
   text-transform: lowercase;
 }
 
+/* ── Nav hover effects ── */
+.nav-link {
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  transform: translateY(-2px) scale(1.2);
+  opacity: 0.75;
+}
+
 /* ── Blog container ── */
 .blog-container {
   max-width: 900px;
 }
 
-/* ── Blog content links ── */
+/* ── Content links ── */
+a.text-danger:not(.nav-link),
 .blog-content a {
   color: var(--bs-danger);
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+  text-underline-offset: 3px;
+}
+
+a.text-danger:not(.nav-link):hover,
+.blog-content a:hover {
+  opacity: 0.75;
+  text-decoration: underline;
 }
 
 /* ── Sidebar ── */
