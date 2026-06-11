@@ -2,6 +2,7 @@
 layout: blog
 title: "Education moving forward"
 date: 2025-09-05
+description: "Rethinking the classroom: flipped learning, AI tools, and teaching students to validate their thinking instead of outsourcing it."
 image: "assets/img/blogs/futurelearning.png"
 ---
 We’re at a turning point in education. For decades, schools have followed a model built around lectures, homework, and standardized testing. But today and moving forward, kids have something past generations didn’t. Powerful tools, accessible resources, and technology that lets them learn in the way that works best... for them.

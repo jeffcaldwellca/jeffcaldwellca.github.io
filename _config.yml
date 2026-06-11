@@ -1,5 +1,5 @@
 title: jeffcaldwell.ca
-url: "https://jeffcaldwell.ca"
+url: "https://www.jeffcaldwell.ca"
 description: "Software Developer and Professor of Business and Information Technology"
 
 exclude:
@@ -8,9 +8,7 @@ exclude:
   - Gemfile.lock
 
 collections:
-  pings:
-    output: false  # Prevents individual ping pages from being generated
-    sort_by: date
   blogs:
     output: true  # Generates individual blog post pages
     permalink: /blog/:name/
+    sort_by: date

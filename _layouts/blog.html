@@ -11,12 +11,11 @@
           <div class="blog-content">{{ content }}</div>
         </div>
         <div class="col-12 col-md-4 sidebar-col">
-          <div class="sidebar-sticky">
-            <img src="{{ page.image | default: 'assets/img/me.jpg' | relative_url }}" class="img-fluid img-thumbnail sidebar-img" alt="{% if page.image %}{{ page.title }}{% else %}Jeff Caldwell{% endif %}" width="400" height="400" fetchpriority="high">
-            <div class="mt-3">
-              {% include nav.html %}
-            </div>
-          </div>
+          {% if page.image %}
+            {% include sidebar.html image=page.image alt=page.title %}
+          {% else %}
+            {% include sidebar.html %}
+          {% endif %}
         </div>
       </div>
     </main>

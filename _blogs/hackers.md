@@ -2,6 +2,7 @@
 layout: blog
 title: "Hack The Planet"
 date: 2020-08-21
+description: "How the 1995 movie Hackers shaped my entire trajectory in tech — 800+ viewings and counting."
 image: "assets/img/blogs/hacktheplanet.png"
 ---
 Not a single piece of media I have consumed in my life has had such an impact, a ripple effect, on my future trajectory than the movie Hackers.

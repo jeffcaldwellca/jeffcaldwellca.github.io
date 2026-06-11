@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /pings/
+Allow: /
+
+Sitemap: https://www.jeffcaldwell.ca/sitemap.xml

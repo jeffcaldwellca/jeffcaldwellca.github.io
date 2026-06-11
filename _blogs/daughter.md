@@ -2,6 +2,7 @@
 layout: blog
 title: "Experiences with my daughter"
 date: 2015-05-03
+description: "Re-experiencing the books, movies, and games I grew up with — this time through my daughter's eyes."
 image: "assets/img/blogs/daughter.png"
 ---
 *(Note: This was originally written as part of an interview essay for a job application)*
