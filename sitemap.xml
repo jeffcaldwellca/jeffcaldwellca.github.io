@@ -2,18 +2,22 @@
 permalink: /sitemap.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {%- for page in site.pages %}
-  {%- unless page.url contains '.html' or page.url contains '.xml' or page.url contains '.txt' %}
-  <url>
-    <loc>{{ page.url | absolute_url }}</loc>
-  </url>
-  {%- endunless %}
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>{{ '/sitemap-main.xml' | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </sitemap>
+  {%- comment %}
+    GitHub Pages project repos served as subdirectories under this domain.
+    Each builds from its own repo and ships its own sitemap, referenced here
+    so this index auto-stays-current as those subsites change. Point at the
+    urlset file (not a nested sitemapindex — the spec forbids nesting those).
+    Add a subsite by adding its urlset path below.
+  {%- endcomment %}
+  {%- assign subsite_sitemaps = "/macspanso/sitemap.xml,/muldoon/sitemap.xml,/support-portal/sitemap-0.xml" | split: "," %}
+  {%- for sm in subsite_sitemaps %}
+  <sitemap>
+    <loc>{{ sm | absolute_url }}</loc>
+  </sitemap>
   {%- endfor %}
-  {%- for post in site.blogs %}
-  <url>
-    <loc>{{ post.url | absolute_url }}</loc>
-    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-  </url>
-  {%- endfor %}
-</urlset>
+</sitemapindex>
