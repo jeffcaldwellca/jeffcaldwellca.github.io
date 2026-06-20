@@ -58,6 +58,15 @@ a.text-danger:not(.nav-link):hover,
   text-decoration: underline;
 }
 
+/* ── Beta / status tag ── */
+.beta-tag {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  color: var(--bs-tertiary-color, #767676);
+  text-transform: lowercase;
+  vertical-align: 0.08em;
+}
+
 /* ── Sidebar ── */
 .sidebar-sticky {
   position: sticky;
