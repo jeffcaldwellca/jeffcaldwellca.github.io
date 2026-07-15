@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include header.html %}
+  <body>
+    <main class="container">
+      <p><a href="{{ '/' | relative_url }}" class="text-danger" aria-label="Back to projects">&lt; back</a></p>
+      <div class="row align-items-start">
+        <div class="col-12 col-md-8">
+          {% if page.screenshot %}
+            <img src="{{ page.screenshot | relative_url }}" alt="{{ page.name }} screenshot" class="project-hero">
+          {% endif %}
+          <h1>{{ page.name }}</h1>
+          <p class="project-badges">
+            {% if page.status %}<span class="beta-tag">{{ page.status }}</span>{% endif %}
+            {% if page.version %}<span class="beta-tag">v{{ page.version }}</span>{% endif %}
+            {% if page.platforms %}{% for platform in page.platforms %}<span class="beta-tag">{{ platform }}</span>{% endfor %}{% endif %}
+            {% if page.license %}<span class="beta-tag">{{ page.license }}</span>{% endif %}
+          </p>
+          <p>{{ page.purpose }}</p>
+          {{ content }}
+          {% if page.tech %}
+          <p class="project-tech">
+            {% for t in page.tech %}<span class="beta-tag">{{ t }}</span>{% endfor %}
+          </p>
+          {% endif %}
+          <p class="mt-3">
+            <a href="{{ page.marketing_url }}" class="text-danger me-3" target="_blank" rel="noopener noreferrer">marketing site</a>
+            {% if page.repo_url %}<a href="{{ page.repo_url }}" class="text-danger" target="_blank" rel="noopener noreferrer">github repo</a>{% endif %}
+          </p>
+        </div>
+        <div class="col-12 col-md-4 sidebar-col">
+          {% include sidebar.html %}
+        </div>
+      </div>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

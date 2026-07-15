@@ -16,4 +16,9 @@ permalink: /sitemap-main.xml
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
   </url>
   {%- endfor %}
+  {%- for project in site.projects %}
+  <url>
+    <loc>{{ project.url | absolute_url }}</loc>
+  </url>
+  {%- endfor %}
 </urlset>

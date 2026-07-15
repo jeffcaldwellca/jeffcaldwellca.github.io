@@ -14,7 +14,7 @@ permalink: /sitemap.xml
     urlset file (not a nested sitemapindex — the spec forbids nesting those).
     Add a subsite by adding its urlset path below.
   {%- endcomment %}
-  {%- assign subsite_sitemaps = "/macspanso/sitemap.xml,/mkcertWeb/sitemap.xml,/muldoon/sitemap.xml,/scout-portal/sitemap-0.xml" | split: "," %}
+  {%- assign subsite_sitemaps = "/macspanso/sitemap.xml,/mkcertWeb/sitemap.xml,/muldoon/sitemap.xml,/scout-portal/sitemap-0.xml,/teleport/sitemap.xml" | split: "," %}
   {%- for sm in subsite_sitemaps %}
   <sitemap>
     <loc>{{ sm | absolute_url }}</loc>

@@ -12,3 +12,6 @@ collections:
     output: true  # Generates individual blog post pages
     permalink: /blog/:name/
     sort_by: date
+  projects:
+    output: true  # Generates individual project info card pages
+    permalink: /projects/:name/
