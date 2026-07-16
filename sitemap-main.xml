@@ -16,9 +16,8 @@ permalink: /sitemap-main.xml
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
   </url>
   {%- endfor %}
-  {%- for project in site.projects %}
-  <url>
-    <loc>{{ project.url | absolute_url }}</loc>
-  </url>
-  {%- endfor %}
+  {%- comment -%}
+  Project card pages are intentionally omitted while WIP — see the noindex
+  default in _config.yml. Restore this loop when their content is ready.
+  {%- endcomment -%}
 </urlset>

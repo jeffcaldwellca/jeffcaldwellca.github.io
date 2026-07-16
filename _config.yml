@@ -16,3 +16,11 @@ collections:
   projects:
     output: true  # Generates individual project info card pages
     permalink: /projects/:name/
+
+defaults:
+  # Project card pages are WIP: reachable by direct URL, kept out of search
+  # results. Drop this block (and unhide .info-link) when they're ready.
+  - scope:
+      type: projects
+    values:
+      noindex: true

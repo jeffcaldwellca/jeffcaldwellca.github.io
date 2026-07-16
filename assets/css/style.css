@@ -58,29 +58,26 @@ a.text-danger:not(.nav-link):hover,
   text-decoration: underline;
 }
 
-/* ── Beta / status tag ── */
-.beta-tag {
+/* ── Bracketed inline tags: [beta] status, [repo] link ── */
+.beta-tag,
+.repo-tag {
   font-size: 0.7rem;
   letter-spacing: 0.12em;
-  color: var(--bs-tertiary-color, #767676);
   text-transform: lowercase;
   vertical-align: 0.08em;
 }
 
-/* ── Repo / info link icons (project listings) ── */
-.repo-link,
-.info-link {
-  display: inline-block;
-  width: 0.85em;
-  height: 0.85em;
-  margin-left: 0.3em;
-  vertical-align: -0.05em;
+.beta-tag {
   color: var(--bs-tertiary-color, #767676);
 }
 
-.repo-link:hover,
-.info-link:hover {
-  opacity: 0.75;
+.repo-tag {
+  white-space: nowrap;
+}
+
+/* Project card pages are WIP — unhide when their content is filled in. */
+.info-link {
+  display: none;
 }
 
 /* ── Project card page ── */
