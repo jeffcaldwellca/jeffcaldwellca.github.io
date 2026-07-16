@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+#
+# Build the site the way GitHub Pages builds it.
+#
+# Runs the same container image as the "pages build and deployment" workflow,
+# so Jekyll, Liquid and the plugin set all match. This matters because a plain
+# local `jekyll build` matches almost nothing: it runs Jekyll 4 instead of 3.10
+# and loads none of the GitHub Pages plugins. A Liquid syntax error inside
+# docs/ once built fine locally and took the deploy down for exactly that
+# reason.
+#
+# Usage:
+#   bin/ci-build              # build into ./_site
+#   bin/ci-build --verbose    # same, with Jekyll's verbose output
+#
+# The image tag below must match the one CI actually runs. GitHub picks that
+# version (Pages uses its own built-in workflow, not one in this repo), so it
+# can move without warning. To check the current one:
+#
+#   gh run view --log | grep -o 'jekyll-build-pages:v[0-9.]*' | head -1
+#
+set -euo pipefail
+
+IMAGE="ghcr.io/actions/jekyll-build-pages:v1.0.13"
+DESTINATION="./_site"
+
+cd "$(git rev-parse --show-toplevel)"
+
+verbose=false
+[ "${1:-}" = "--verbose" ] && verbose=true
+
+if ! docker info >/dev/null 2>&1; then
+  echo "error: the Docker daemon isn't running." >&2
+  exit 1
+fi
+
+# The metadata plugin resolves site.baseurl through the GitHub API, so the
+# build genuinely needs a token — CI passes the workflow's GITHUB_TOKEN here.
+token="${JEKYLL_GITHUB_TOKEN:-${GITHUB_TOKEN:-}}"
+if [ -z "$token" ] && command -v gh >/dev/null 2>&1; then
+  token="$(gh auth token 2>/dev/null || true)"
+fi
+if [ -z "$token" ]; then
+  echo "error: no GitHub token found. Run 'gh auth login', or set GITHUB_TOKEN." >&2
+  echo "       jekyll-github-metadata needs one to resolve site.baseurl." >&2
+  exit 1
+fi
+
+# owner/repo, the way the workflow env var supplies it.
+nwo="$(git remote get-url origin \
+  | sed -E 's#^(git@github\.com:|https://github\.com/)##; s#\.git$##')"
+
+# --platform is explicit because the image is amd64-only and this is likely an
+# arm64 Mac; without it Docker refuses rather than emulating.
+docker run --rm --platform linux/amd64 \
+  -v "$PWD:/github/workspace" \
+  -e GITHUB_WORKSPACE=/github/workspace \
+  -e GITHUB_REPOSITORY="$nwo" \
+  -e GITHUB_API_URL=https://api.github.com \
+  -e INPUT_SOURCE=. \
+  -e INPUT_DESTINATION="$DESTINATION" \
+  -e INPUT_FUTURE=false \
+  -e INPUT_VERBOSE="$verbose" \
+  -e INPUT_BUILD_REVISION="$(git rev-parse HEAD)" \
+  -e INPUT_TOKEN="$token" \
+  "$IMAGE"
