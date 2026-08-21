@@ -75,24 +75,6 @@ a.text-danger:not(.nav-link):hover,
   white-space: nowrap;
 }
 
-/* Project card pages are WIP — unhide when their content is filled in. */
-.info-link {
-  display: none;
-}
-
-/* ── Project card page ── */
-.project-hero {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-}
-
-.project-badges .beta-tag,
-.project-tech .beta-tag {
-  margin-right: 0.5em;
-}
-
 /* ── Sidebar ── */
 .sidebar-sticky {
   position: sticky;
