@@ -80,16 +80,15 @@ a.text-danger:not(.nav-link):hover,
   border: 0;
   height: auto;
   opacity: 1;
-  margin: 1.5rem 0;
+  margin: 1.25rem 0;
   color: var(--bs-tertiary-color, #767676);
   text-align: center;
   line-height: 1;
 }
 
 .section-sep::before {
-  content: "· · ·";
-  font-size: 1rem;
-  letter-spacing: 0.5em;
+  content: "~";
+  font-size: 0.8rem;
 }
 
 /* ── Sidebar ── */
