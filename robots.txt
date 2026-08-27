@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.jeffcaldwell.ca/sitemap.xml
+Sitemap: https://www.jeffcaldwell.ca/portDrop/sitemap.xml
