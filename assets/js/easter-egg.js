@@ -125,7 +125,9 @@
         var dy = row - cy;
         line += cellChar(dx, dy, col, row, tick);
       }
-      out += line.replace(/\s+$/, "") + "\n";
+      // Keep every row at full width so the block's centre is the grid's
+      // centre; trimming would let the random halo dots shift the face.
+      out += line + "\n";
     }
     pre.textContent = out;
   }
