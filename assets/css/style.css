@@ -75,20 +75,23 @@ a.text-danger:not(.nav-link):hover,
   white-space: nowrap;
 }
 
-/* ── Section separator: a discreet ascii rule between the project groups ── */
+/* ── Section separator: an ascii rule between the project groups ──
+   Left-aligned with the list labels so it reads as part of the text flow.
+   The list above already carries 1rem of bottom margin, so only the
+   bottom margin is set here to keep the rhythm at one line-gap each side. */
 .section-sep {
   border: 0;
   height: auto;
   opacity: 1;
-  margin: 1.25rem 0;
-  color: var(--bs-tertiary-color, #767676);
-  text-align: center;
+  margin: 0 0 1rem;
+  color: inherit;
+  text-align: left;
   line-height: 1;
 }
 
 .section-sep::before {
   content: "~";
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 /* ── Sidebar ── */
